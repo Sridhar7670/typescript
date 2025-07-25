@@ -1,0 +1,26 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Learning typescript..",
+ "scripts": {
+  "build": "tsc",
+  "start:variables": "npm run build && node dist/variables.js",
+  "start:array": "npm run build && node dist/array.js",
+  "start:objects": "npm run build && node dist/objects.js"
+},
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sridhar7670/typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sridhar7670/typescript/issues"
+  },
+  "homepage": "https://github.com/Sridhar7670/typescript#readme"
+}
+  
+

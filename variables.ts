@@ -14,7 +14,7 @@ const marks: number[] = [80, 90, 75]; // Sirf numbers ka array hai, string allow
 let mixData: (string | number)[] = ["Roll No", 101, "Name", "Ravi"]; // String aur number dono chalenge
 
 // Tuple - fixed order aur fixed type
-const student: [string, number] = ["Ravi", 101]; // Pehla string, dusra number hona chahiye
+const student: [string, number,any] = ["Ravi", 101,222]; // Pehla string, dusra number hona chahiye
 
 // Enum - fixed set of options
 enum Direction {
@@ -37,10 +37,12 @@ let nothingHere: null = null;
 let notDefinedYet: undefined = undefined; // Dono special types hain
 
 // Object type
-const person: { name: string; age: number } = {
-  name: "Sita",
-  age: 28
-}; // Simple object with fixed structure
+// const person: { name: string; age: number } = {
+//   name: "Sita",
+//   age: 28
+// }; 
+
+const personVar = { name: "Ravi", age: 25 };// Simple object with fixed structure
 
 // Union type - ya to string ya number chalega
 let id: string | number = "EMP123"; // Pehle string assign kiya
@@ -58,3 +60,8 @@ const greet: (name: string) => string = (name) => {
 function throwError(message: string): never {
   throw new Error(message); // Error throw karta hai, return nahi karega kabhi
 }
+
+console.log(greet("sridhar"))
+console.log(student)
+console.log(direction,typeof(direction))
+// console.log(throwError("i am done"))

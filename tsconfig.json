@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    // --- Project Structure ---
+    "outDir": "./dist", // Where to save compiled JS files
+    "rootDir": "./",    // The root of your TS source files
+
+    // --- Modern JavaScript Features ---
+    "target": "es2022", // Compile to modern JavaScript
+    "lib": ["ES2024","ES2016.Array.Include","ES2019.Array", "dom"], // Include modern JS features and DOM types
+    "module": "NodeNext", // Use the modern Node.js module system
+
+    // --- Type Checking Strictness ---
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type
+
+    // --- Module Interoperability ---
+    "esModuleInterop": true, // Allows for better compatibility between CommonJS and ES Modules
+    "moduleDetection": "force", // Treat all files as modules, preventing "redeclare" errors [1]
+
+    // --- Performance ---
+    "skipLibCheck": true // Skip type checking of declaration files for faster compilation [1]
+  }
+}
