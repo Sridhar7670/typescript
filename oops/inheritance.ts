@@ -12,7 +12,7 @@
     class Parent{
         var_one:string = "Hello";
     }
-    class Child extends Parent{
+    class Child extends Parent{  
         var_two:string = "Welcome";
     }
     let p:Parent = new Parent();
