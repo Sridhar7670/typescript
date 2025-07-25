@@ -6,7 +6,10 @@
   "build": "tsc",
   "start:variables": "npm run build && node dist/variables.js",
   "start:array": "npm run build && node dist/array.js",
-  "start:objects": "npm run build && node dist/objects.js"
+  "start:objects": "npm run build && node dist/objects.js",
+  "start:functions":"npm run build && node dist/functions.js",
+  "start:oops": "npm run build && node dist/oops/oops.js",
+  "start:inheritance":"npm run build && node dist/oops/inheritance.js"
 },
 
   "repository": {
