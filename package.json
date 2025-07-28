@@ -13,7 +13,9 @@
   "start:interface":"npm run build && node dist/oops/interface.js",
   "start:abstract":"npm run build && node dist/oops/abstract.js",
   "start:modifies":"npm run build && node dist/oops/modifies.js",
-  "start:polymorphism":"npm run build && node dist/oops/polymorphism.js"
+  "start:polymorphism":"npm run build && node dist/oops/polymorphism.js",
+  "start:readonly":"npm run build && node dist/oops/readonly.js"
+
 
 },
 
