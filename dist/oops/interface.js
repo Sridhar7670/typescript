@@ -36,3 +36,6 @@ let obj6 = {
     }
 };
 console.log(obj6.func_one(), obj6.func_two(), obj6.func_three()); //100 200 300
+// interface interface1{}
+// let obj:interface1 = new interface1();
+////Note : we can't create object to the intefaces also
