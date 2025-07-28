@@ -28,6 +28,7 @@ class class_one {
 }
 let obj1 = new class_one();
 console.log(obj1.var_one, obj1.func_one());
+//acessing private variable
 class class_two {
     var_one = "Hello";
     func_two() {
@@ -36,6 +37,7 @@ class class_two {
 }
 let obj2 = new class_two();
 console.log(obj2.func_two());
+//declaring and then initalizing values using constructors
 class class_three {
     sub_one;
     sub_two;
@@ -100,3 +102,25 @@ class class_6 {
 }
 let obj6 = new class_6("Hello");
 console.log(obj6.arg1); //hello
+;
+let obj = {
+    sub_one: "ReactJS",
+    sub_two: "NodeJS",
+    sub_three: "MongoDB"
+};
+console.log(obj.sub_one, "\n", obj.sub_two, "\n", obj.sub_three);
+let obj7 = {
+    func_one: () => {
+        console.log("this is from func 1 ");
+    },
+    func_two: () => {
+        console.log("func_two");
+    },
+    func_three: () => {
+        return "i am a string from func 3";
+    }
+};
+obj7.func_one();
+obj7.func_two();
+console.log(obj7.func_three());
+obj7.func_three(); //it will return but not print any 

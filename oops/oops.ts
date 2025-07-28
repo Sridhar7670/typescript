@@ -36,6 +36,8 @@ class class_one{
 let obj1:class_one = new class_one();
 console.log(obj1.var_one, obj1.func_one() );
 
+
+//acessing private variable
 class class_two{
     private var_one:string = "Hello";
     public func_two(): string{
@@ -48,16 +50,17 @@ console.log(obj2.func_two() );
 
 
 
-
+//declaring and then initalizing values using constructors
 class class_three{
-sub_one:string;
-sub_two:string;
-sub_three:string;
+    sub_one:string;
+    sub_two:string;
+    sub_three:string;
+
 constructor(){
-this.sub_one = "ReactJS with TypeScript";
-this.sub_two = "NodeJS with TypeScript";
-this.sub_three = "MongoDB with TypeScript";
-}
+    this.sub_one = "ReactJS with TypeScript";
+    this.sub_two = "NodeJS with TypeScript";
+    this.sub_three = "MongoDB with TypeScript";
+    }
 };
 let obj3:class_three = new class_three(); 
 console.log(obj3.sub_one, obj3.sub_two, obj3.sub_three);
@@ -126,3 +129,46 @@ class class_6{
 }
 let obj6:class_6 = new class_6("Hello");
 console.log(obj6.arg1 );   //hello
+
+
+
+
+//interface : is just like a blueprint of class or object andi 
+
+interface interface1{
+    sub_one:string;
+    sub_two:string;
+    sub_three: string;
+};
+let obj:interface1 = {
+    sub_one: "ReactJS",
+    sub_two: "NodeJS",
+    sub_three: "MongoDB"
+};
+
+console.log(obj.sub_one,"\n", obj.sub_two,"\n", obj.sub_three );
+// ReactJS 
+//  NodeJS 
+//  MongoDB
+
+
+interface interface2{
+    func_one():void;
+    func_two():void;
+    func_three():void;
+}
+let obj7:interface2 = {
+    func_one: ():void=>{
+        console.log("this is from func 1 ");
+    },
+    func_two: ():void=>{
+        console.log("func_two");
+    },
+    func_three : ():string=> {
+        return "i am a string from func 3"
+    }
+};
+obj7.func_one();
+obj7.func_two();
+console.log(obj7.func_three()); 
+obj7.func_three();  //it will return but not print any 

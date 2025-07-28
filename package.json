@@ -9,7 +9,10 @@
   "start:objects": "npm run build && node dist/objects.js",
   "start:functions":"npm run build && node dist/functions.js",
   "start:oops": "npm run build && node dist/oops/oops.js",
-  "start:inheritance":"npm run build && node dist/oops/inheritance.js"
+  "start:inheritance":"npm run build && node dist/oops/inheritance.js",
+  "start:interface":"npm run build && node dist/oops/interface.js",
+  "start:abstract":"npm run build && node dist/oops/abstract.js"
+
 },
 
   "repository": {
