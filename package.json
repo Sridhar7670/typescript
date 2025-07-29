@@ -5,7 +5,7 @@
  "scripts": {
   "build": "tsc",
   "start:variables": "npm run build && node dist/variables.js",
-  "start:array": "npm run build && node dist/array.js",
+  "start:array": "npm run build && node dist/oops/array1.js",
   "start:objects": "npm run build && node dist/objects.js",
   "start:functions":"npm run build && node dist/functions.js",
   "start:oops": "npm run build && node dist/oops/oops.js",
@@ -18,7 +18,9 @@
   "start:module2":"npm run build && node dist/oops/modules/module2.js",
   "start:module3":"npm run build && node dist/oops/modules/module3.js",
   "start:genric":"npm run build && node dist/generics/generics.js",
-  "start:main":"npm run build && node dist/namespace/main.js"
+  "start:main":"npm run build && node dist/namespace/main.js",
+  "start:tuples":"npm run build && node dist/tuples.js"
+
 
 
 },
