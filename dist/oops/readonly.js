@@ -22,6 +22,9 @@ class Parent {
     constructor(arg1) {
         this.arg1 = arg1;
     }
+    func_one() {
+        return "welcome";
+    }
 }
 class Child extends Parent {
     param1;
@@ -31,6 +34,9 @@ class Child extends Parent {
         this.param1 = param1;
         this.param2 = param2;
     }
+    func_two() {
+        return super.func_one();
+    }
 }
 let obj1 = new Child("Hello_1", "Hello_2");
-console.log(obj1.param1, obj1.param2, obj1.arg1);
+console.log(obj1.param1, obj1.param2, obj1.arg1); //hello_1,HELLO_2,HELLO_1

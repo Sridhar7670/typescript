@@ -42,7 +42,7 @@ let obj2 : interface2_1 ={
 console.log(obj2.var_one,obj2.var_two);
 
 
-//nested interface or granf parent 
+//nested interface or grand parent 
 
 interface interface1_1{
     var_one:string;

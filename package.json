@@ -14,7 +14,11 @@
   "start:abstract":"npm run build && node dist/oops/abstract.js",
   "start:modifies":"npm run build && node dist/oops/modifies.js",
   "start:polymorphism":"npm run build && node dist/oops/polymorphism.js",
-  "start:readonly":"npm run build && node dist/oops/readonly.js"
+  "start:readonly":"npm run build && node dist/oops/readonly.js",
+  "start:module2":"npm run build && node dist/oops/modules/module2.js",
+  "start:module3":"npm run build && node dist/oops/modules/module3.js",
+  "start:genric":"npm run build && node dist/generics/generics.js",
+  "start:main":"npm run build && node dist/namespace/main.js"
 
 
 },
