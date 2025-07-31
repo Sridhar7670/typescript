@@ -25,3 +25,6 @@ console.log("Green color channel:", green);
 // This can lead to breaking the tuple's fixed-length contract. It's a known limitation and generally should be avoided.
 product.push("Extra"); // This will not cause a compile error, but it violates the tuple's definition.
 console.log("Tuple after push (avoid this):", product);
+const array1 = ["5", "hello", 77];
+console.log(array1);
+// array1.push(99); //this would cause an error stating "Property 'push' does not exist on type 'tuple" as we used readOnly
