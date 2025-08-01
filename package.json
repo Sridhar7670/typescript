@@ -21,7 +21,8 @@
   "start:main":"npm run build && node dist/namespace/main.js",
   "start:tuples":"npm run build && node dist/tuples.js",
   "start:prime":"npm run build && node dist/problemSolving/prime.js",
-  "start:enum":"npm run build && node dist/problemSolving/enum.js"
+  "start:enum":"npm run build && node dist/problemSolving/enum.js",
+  "start:calci":"npm run build && node dist/calci.js"
 
 
 

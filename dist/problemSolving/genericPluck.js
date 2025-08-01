@@ -3,7 +3,6 @@
 // Problem: Create a generic function called pluck that safely extracts a value for a given key from an array of objects. The function should be type-safe, meaning it should only allow you to pick keys that actually exist on the objects in the array.
 Object.defineProperty(exports, "__esModule", { value: true });
 function pluck(items, key) {
-    // ... implementation
     return items.map((item) => item[key]);
 }
 // Example Usage:
